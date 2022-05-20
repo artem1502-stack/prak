@@ -6,7 +6,7 @@ class stepOne:
 	@staticmethod
 	@njit
 	def solve(step, function, x, y0):
-		y = np.zeros(len(x))
+		y = x * 0
 		y[0] = y0
 		for i in range(len(x) - 1):
 			k1 = step * function(x, y)
